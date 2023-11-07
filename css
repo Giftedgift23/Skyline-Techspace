@@ -1,0 +1,287 @@
+body {
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+ /* here is the div for the form action */
+
+div.form-main {
+    padding: 20px 0px;
+}
+
+
+div.form-class {
+    padding: 20px 0px;
+
+}
+
+
+/* here is for my input text type */
+
+input[type="text"]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    text-indent: 35px;
+}
+
+input[type="text"]:focus{
+    border-radius: 50px;
+    border: 1px solid lightblue;
+    outline: none;
+}
+
+
+/* here is for my placeholder */
+
+::placeholder {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: lightblue;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px 20px;
+}
+
+
+/* here is for my input email type */
+
+input[type="email"]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    text-indent: 35px;
+}
+
+input[type="email"]:focus{
+    border-radius: 50px;
+    border: 1px solid lightblue;
+    outline: none;
+}
+
+
+/* here is my input tel type */
+
+input[type="tel"]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    text-indent: 35px;
+}
+
+input[type="tel"]:focus{
+    border-radius: 50px;
+    border: 1px solid lightblue;
+    outline: none;
+}
+
+
+/* here is my input password type */
+
+input[type="password"]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    text-indent: 35px;
+}
+
+input[type="password"]:focus{
+    border-radius: 50px;
+    border: 1px solid lightblue;
+    outline: none;
+}
+
+
+/* here is my font awesome icons used for the input tags, so, instead of putting them in a div class 
+seperately, I noticed they have the same family name which i used as fa-solid */
+
+.fa-solid {
+    position: absolute;
+    /* top: auto; */
+    font-size: 18px;
+    margin-top: 9px;
+    margin-left: 20px;
+    
+}
+
+
+/* here is for my social and also the font awesome icons for my social*/
+
+.fa-brands {
+    padding: 15px;
+}
+
+div.social {
+    padding: 40px;
+}
+.social a {
+    text-decoration: none;
+}
+
+a.facebook {
+    background-color: blue;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px;
+
+}
+
+a.twitter {
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+a.google {
+    background-color: red;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+/* here is the end of my social */
+
+
+
+/* here is for my divider  */
+
+.divider {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    padding: 1px;
+    background-color: lightgrey;
+    flex: 1;
+    margin: 10px 3px;
+}
+
+span.divider-btn {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    text-transform: lowercase;
+}
+
+
+
+/* here is for my input submit type */
+
+input[type="submit"]{
+    width: 53%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: green;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+div.sign-up {
+    padding-top: 30px;
+}
+
+
+
+
+
+/* here is for my mobile responsiveness */
+
+
+/* note that flex direction in column are mostly used on mobile while in row is for desktop and tablet */
+
+
+@media (min-width:480px) and (max-width:800px){
+    body{
+      background-color: rgb(19, 18, 17);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        margin: -40px 50px;
+        font-size: 15px;
+    }
+
+    
+.fa-brands {
+    padding: 5px;
+    font-size: 13px;
+}
+
+a.facebook {
+    padding: 10px;
+    font-size: 12px;
+}
+
+a.twitter {
+    padding: 10px;
+    font-size: 12px;
+}
+
+a.google {
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+::placeholder {
+    font-size: 11.8px;
+    padding: 0px 2px;
+}
+ 
+.fa-solid {
+    font-size: 13px;
+}
+input[type="text"] {
+    width: 45%;
+}
+
+input[type="email"] {
+    width: 45%;
+}
+
+input[type="tel"] {
+    width: 45%;
+}
+
+input[type="password"]{
+    width: 45%;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+}
+}
